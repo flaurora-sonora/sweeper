@@ -10,11 +10,13 @@ class ReTidy {
 	//public static $version = 1.01;
 	//public static $version = 2.00;
 	//public static $version = 2.04;
-	public static $version = 2.05;
+	//public static $version = 2.05;
+	public static $version = 2.6;
 	//public static $build = 20080624;
 	//public static $build = 20090824;
 	//public static $build = 20120930;
-	public static $build = 20150619;
+	//public static $build = 20150619;
+	public static $build = 20181201;
 
 	// the default profile
 	public $config_profile = 'maximum';
