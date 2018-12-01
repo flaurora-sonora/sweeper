@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT html (body | head?)>
+<!ATTLIST html
+          manifest CDATA #IMPLIED>
+<!ELEMENT body ((a, abbr, area, address, article, aside, audio, b, bdo, blockquote, bdo, br, button, canvas, cite, code, command, datalist, del, details, dfn, dialog, div, dl, em, embed, fieldset, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, i, iframe, img, input, ins, kbd, keygen, label, link, map, mark, math, menu, meta, meter, nav, noscript, ol, object, output, p, pre, progress, q, ruby, samp, script, section, select, small, span, strong, style, sub, sup, svg, table, textarea, time, ul, var, video))>
+<!ATTLIST body
+          onafterprint CDATA #IMPLIED
+          onbeforeprint CDATA #IMPLIED
+          onbeforeunload CDATA #IMPLIED
+          onhashchange CDATA #IMPLIED
+          onmessage CDATA #IMPLIED
+          onoffline CDATA #IMPLIED
+          ononline CDATA #IMPLIED
+          onpopstate CDATA #IMPLIED
+          onredo CDATA #IMPLIED
+          onresize CDATA #IMPLIED
+          onstorage CDATA #IMPLIED
+          onundo CDATA #IMPLIED
+          onunload CDATA #IMPLIED>
+<!ELEMENT a (#PCDATA | a | abbr | area | address | article | aside | audio | b | bdo | blockquote | bdo | br | button | canvas | cite | code | command | datalist | del | details | dfn | dialog | div | dl | em | embed | fieldset | figure | footer | form | h1 | h2 | h3 | h4 | h5 | h6 | header | hgroup | hr | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | menu | meta | meter | nav | noscript | ol | object | output | p | pre | progress | q | ruby | samp | script | section | select | small | span | strong | style | sub | sup | svg | table | textarea | time | ul | var | video)*>
+<!ATTLIST a
+          href CDATA #IMPLIED
+          target CDATA #IMPLIED
+          ping CDATA #IMPLIED
+          rel CDATA #IMPLIED
+          media CDATA #IMPLIED
+          hreflang CDATA #IMPLIED
+          type CDATA #IMPLIED>
+<!ELEMENT abbr (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ELEMENT area EMPTY>
+<!ATTLIST area
+          Shape (rect | circle | poly | default) "rect"
+          coords CDATA #IMPLIED
+          href CDATA #IMPLIED
+          hreflang CDATA #IMPLIED
+          alt CDATA #REQUIRED
+          target CDATA #IMPLIED
+          media CDATA #IMPLIED
+          rel CDATA #IMPLIED
+          ping CDATA #IMPLIED
+          type CDATA #IMPLIED>
+<!ELEMENT audio (#PCDATA | source)*>
+<!ATTLIST audio
+          src CDATA #IMPLIED
+          autobuffer (autobuffer) #IMPLIED
+          autoplay (autoplay) #IMPLIED
+          loop (loop) #IMPLIED
+          controls (controls) #IMPLIED>
+<!ELEMENT source EMPTY>
+<!ATTLIST source
+          src CDATA #IMPLIED
+          type CDATA #IMPLIED
+          media CDATA #IMPLIED>
+<!ELEMENT b (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ELEMENT bdo (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ELEMENT br EMPTY>
+<!ELEMENT button (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ATTLIST button
+          autofocus (autofocus) #IMPLIED
+          disabled (autofocus) #IMPLIED
+          form CDATA #IMPLIED
+          formaction CDATA #IMPLIED
+          formenctype (multipart/form-data | application/x-www-form-urlencoded | text/plain) #IMPLIED
+          formmethod (get | post | put | delete) "get"
+          formnovalidate (formnovalidate) #IMPLIED
+          formtarget CDATA #IMPLIED
+          name CDATA #IMPLIED
+          value CDATA #IMPLIED
+          type (button | reset | submit) "submit">
+<!ELEMENT canvas EMPTY>
+<!ATTLIST canvas
+          width CDATA #IMPLIED
+          height CDATA #IMPLIED>
+<!ELEMENT cite (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ELEMENT code (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ELEMENT command EMPTY>
+<!ATTLIST command
+          type (command | checkbox | radio) #IMPLIED
+          label CDATA #IMPLIED
+          icon CDATA #IMPLIED
+          disabled (disabled) #IMPLIED
+          checked (checked) #IMPLIED
+          radiogroup CDATA #IMPLIED>
+<!ELEMENT datalist (option | (a, abbr, area, audio, b, bdo, br, button, canvas, cite, code, command, datalist, del, dfn, em, embed, i, iframe, img, input, ins, kbd, keygen, label, link, map, mark, math, meta, meter, noscript, object, output, progress, q, ruby, samp, script, select, small, span, strong, sub, sup, svg, textarea, time, var, video))>
+<!ELEMENT option EMPTY>
+<!ATTLIST option
+          disabled (disabled) #IMPLIED
+          selected (selected) #IMPLIED
+          label CDATA #IMPLIED
+          value CDATA #IMPLIED>
+<!ELEMENT del (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ATTLIST del
+          cite CDATA #IMPLIED
+          datetime CDATA #IMPLIED>
+<!ELEMENT dfn (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ELEMENT em (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ELEMENT embed EMPTY>
+<!ATTLIST embed
+          src CDATA #IMPLIED
+          height CDATA #IMPLIED
+          width CDATA #IMPLIED
+          type CDATA #IMPLIED>
+<!ELEMENT i (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ELEMENT iframe EMPTY>
+<!ATTLIST iframe
+          name CDATA #IMPLIED
+          src CDATA #IMPLIED
+          height CDATA #IMPLIED
+          width CDATA #IMPLIED
+          sandbox (allow-same-origin | allow-forms | allow-scripts) #IMPLIED
+          seamless (seamless) #IMPLIED>
+<!ELEMENT img EMPTY>
+<!ATTLIST img
+          alt CDATA #REQUIRED
+          src CDATA #REQUIRED
+          height CDATA #IMPLIED
+          width CDATA #IMPLIED
+          usemap CDATA #IMPLIED
+          ismap (ismap) #IMPLIED>
+<!ELEMENT input EMPTY>
+<!ATTLIST input
+          type (button | checkbox | color | date | datetime | datetime-local | email | file | hidden | image | month | number | password | radio | range | reset | search | submit | text | tel | time | url | week) #IMPLIED
+          accept CDATA #IMPLIED
+          alt CDATA #IMPLIED
+          autocomplete CDATA #IMPLIED
+          checked (checked) #IMPLIED
+          disabled (disabled) #IMPLIED
+          form CDATA #IMPLIED
+          formaction CDATA #IMPLIED
+          formenctype (multipart/form-data | application/x-www-form-urlencoded | text/plain) #IMPLIED
+          formmethod (get | post | put | delete) "get"
+          formnovalidate (formnovalidate) #IMPLIED
+          formtarget CDATA #IMPLIED
+          height CDATA #IMPLIED
+          list CDATA #IMPLIED
+          max CDATA #IMPLIED
+          maxlength CDATA #IMPLIED
+          min CDATA #IMPLIED
+          multiple CDATA #IMPLIED
+          pattern CDATA #IMPLIED
+          placeholder CDATA #IMPLIED
+          readonly CDATA #IMPLIED
+          required CDATA #IMPLIED
+          size CDATA #IMPLIED
+          src CDATA #IMPLIED
+          step CDATA #IMPLIED
+          width CDATA #IMPLIED
+          files CDATA #IMPLIED
+          value CDATA #IMPLIED>
+<!ELEMENT ins (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ATTLIST ins
+          cite CDATA #IMPLIED
+          datetime CDATA #IMPLIED>
+<!ELEMENT kbd (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ELEMENT keygen EMPTY>
+<!ATTLIST keygen
+          autofocus (autofocus) #IMPLIED
+          challenge CDATA #IMPLIED
+          disabled (disabled) #IMPLIED
+          form CDATA #IMPLIED
+          keytype (rsa) #IMPLIED
+          name CDATA #IMPLIED>
+<!ELEMENT label (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ATTLIST label
+          form CDATA #IMPLIED
+          for CDATA #IMPLIED>
+<!ELEMENT link EMPTY>
+<!ATTLIST link
+          href CDATA #IMPLIED
+          hreflang CDATA #IMPLIED
+          rel CDATA #IMPLIED
+          media CDATA "screen"
+          type CDATA #IMPLIED
+          sizes CDATA #IMPLIED>
+<!ELEMENT map ((a, abbr, area, audio, b, bdo, br, button, canvas, cite, code, command, datalist, del, dfn, em, embed, i, iframe, img, input, ins, kbd, keygen, label, link, map, mark, math, meta, meter, noscript, object, output, progress, q, ruby, samp, script, select, small, span, strong, sub, sup, svg, textarea, time, var, video) | (a, abbr, area, address, article, aside, audio, b, bdo, blockquote, bdo, br, button, canvas, cite, code, command, datalist, del, details, dfn, dialog, div, dl, em, embed, fieldset, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, i, iframe, img, input, ins, kbd, keygen, label, link, map, mark, math, menu, meta, meter, nav, noscript, ol, object, output, p, pre, progress, q, ruby, samp, script, section, select, small, span, strong, style, sub, sup, svg, table, textarea, time, ul, var, video))>
+<!ATTLIST map
+          name CDATA #REQUIRED>
+<!ELEMENT mark (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ELEMENT math EMPTY>
+<!ELEMENT meta EMPTY>
+<!ATTLIST meta
+          http-equiv (content-language | content-type | default-style | refresh) #IMPLIED
+          name CDATA #IMPLIED
+          content CDATA #IMPLIED
+          charset CDATA #IMPLIED>
+<!ELEMENT meter (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ATTLIST meter
+          value CDATA #IMPLIED
+          min CDATA #IMPLIED
+          max CDATA #IMPLIED
+          low CDATA #IMPLIED
+          high CDATA #IMPLIED
+          optimum CDATA #IMPLIED>
+<!ELEMENT noscript (#PCDATA | a | abbr | area | address | article | aside | audio | b | bdo | blockquote | bdo | br | button | canvas | cite | code | command | datalist | del | details | dfn | dialog | div | dl | em | embed | fieldset | figure | footer | form | h1 | h2 | h3 | h4 | h5 | h6 | header | hgroup | hr | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | menu | meta | meter | nav | noscript | ol | object | output | p | pre | progress | q | ruby | samp | script | section | select | small | span | strong | style | sub | sup | svg | table | textarea | time | ul | var | video)*>
+<!ELEMENT address (#PCDATA | a | abbr | area | address | article | aside | audio | b | bdo | blockquote | bdo | br | button | canvas | cite | code | command | datalist | del | details | dfn | dialog | div | dl | em | embed | fieldset | figure | footer | form | h1 | h2 | h3 | h4 | h5 | h6 | header | hgroup | hr | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | menu | meta | meter | nav | noscript | ol | object | output | p | pre | progress | q | ruby | samp | script | section | select | small | span | strong | style | sub | sup | svg | table | textarea | time | ul | var | video)*>
+<!ELEMENT article (#PCDATA | a | abbr | area | address | article | aside | audio | b | bdo | blockquote | bdo | br | button | canvas | cite | code | command | datalist | del | details | dfn | dialog | div | dl | em | embed | fieldset | figure | footer | form | h1 | h2 | h3 | h4 | h5 | h6 | header | hgroup | hr | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | menu | meta | meter | nav | noscript | ol | object | output | p | pre | progress | q | ruby | samp | script | section | select | small | span | strong | style | sub | sup | svg | table | textarea | time | ul | var | video)*>
+<!ATTLIST article
+          Pubdate CDATA #IMPLIED>
+<!ELEMENT aside (#PCDATA | a | abbr | area | address | article | aside | audio | b | bdo | blockquote | bdo | br | button | canvas | cite | code | command | datalist | del | details | dfn | dialog | div | dl | em | embed | fieldset | figure | footer | form | h1 | h2 | h3 | h4 | h5 | h6 | header | hgroup | hr | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | menu | meta | meter | nav | noscript | ol | object | output | p | pre | progress | q | ruby | samp | script | section | select | small | span | strong | style | sub | sup | svg | table | textarea | time | ul | var | video)*>
+<!ELEMENT blockquote (#PCDATA | a | abbr | area | address | article | aside | audio | b | bdo | blockquote | bdo | br | button | canvas | cite | code | command | datalist | del | details | dfn | dialog | div | dl | em | embed | fieldset | figure | footer | form | h1 | h2 | h3 | h4 | h5 | h6 | header | hgroup | hr | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | menu | meta | meter | nav | noscript | ol | object | output | p | pre | progress | q | ruby | samp | script | section | select | small | span | strong | style | sub | sup | svg | table | textarea | time | ul | var | video)*>
+<!ATTLIST blockquote
+          cite CDATA #IMPLIED>
+<!ELEMENT details (#PCDATA | legend | a | abbr | area | address | article | aside | audio | b | bdo | blockquote | bdo | br | button | canvas | cite | code | command | datalist | del | details | dfn | dialog | div | dl | em | embed | fieldset | figure | footer | form | h1 | h2 | h3 | h4 | h5 | h6 | header | hgroup | hr | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | menu | meta | meter | nav | noscript | ol | object | output | p | pre | progress | q | ruby | samp | script | section | select | small | span | strong | style | sub | sup | svg | table | textarea | time | ul | var | video)*>
+<!ATTLIST details
+          open (open) #IMPLIED>
+<!ELEMENT legend (#PCDATA | a | abbr | area | address | article | aside | audio | b | bdo | blockquote | bdo | br | button | canvas | cite | code | command | datalist | del | details | dfn | dialog | div | dl | em | embed | fieldset | figure | footer | form | h1 | h2 | h3 | h4 | h5 | h6 | header | hgroup | hr | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | menu | meta | meter | nav | noscript | ol | object | output | p | pre | progress | q | ruby | samp | script | section | select | small | span | strong | style | sub | sup | svg | table | textarea | time | ul | var | video | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ELEMENT dialog (dd | dt)>
+<!ELEMENT dd (#PCDATA | a | abbr | area | address | article | aside | audio | b | bdo | blockquote | bdo | br | button | canvas | cite | code | command | datalist | del | details | dfn | dialog | div | dl | em | embed | fieldset | figure | footer | form | h1 | h2 | h3 | h4 | h5 | h6 | header | hgroup | hr | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | menu | meta | meter | nav | noscript | ol | object | output | p | pre | progress | q | ruby | samp | script | section | select | small | span | strong | style | sub | sup | svg | table | textarea | time | ul | var | video)*>
+<!ELEMENT div (#PCDATA | a | abbr | area | address | article | aside | audio | b | bdo | blockquote | bdo | br | button | canvas | cite | code | command | datalist | del | details | dfn | dialog | div | dl | em | embed | fieldset | figure | footer | form | h1 | h2 | h3 | h4 | h5 | h6 | header | hgroup | hr | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | menu | meta | meter | nav | noscript | ol | object | output | p | pre | progress | q | ruby | samp | script | section | select | small | span | strong | style | sub | sup | svg | table | textarea | time | ul | var | video)*>
+<!ELEMENT dl (dd | dt)>
+<!ELEMENT dt (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ELEMENT object (#PCDATA | param)*>
+<!ATTLIST object
+          data CDATA #IMPLIED
+          type CDATA #IMPLIED
+          height CDATA #IMPLIED
+          width CDATA #IMPLIED
+          usemap CDATA #IMPLIED
+          name CDATA #IMPLIED
+          form CDATA #IMPLIED
+          classid CDATA #IMPLIED>
+<!ELEMENT param EMPTY>
+<!ATTLIST param
+          name CDATA #REQUIRED
+          value CDATA #REQUIRED>
+<!ELEMENT output (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ATTLIST output
+          for CDATA #IMPLIED
+          form CDATA #IMPLIED
+          name CDATA #IMPLIED>
+<!ELEMENT progress (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ATTLIST progress
+          value CDATA #IMPLIED
+          max CDATA #IMPLIED>
+<!ELEMENT q (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ATTLIST q
+          cite CDATA #IMPLIED>
+<!ELEMENT ruby (#PCDATA | rt | rp | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ELEMENT rt (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ELEMENT samp (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ELEMENT script EMPTY>
+<!ATTLIST script
+          charset CDATA #IMPLIED
+          type (text/ecmascript | text/javascript | text/javascript1.0 | text/javascript1.1 | text/javascript1.2 | text/javascript1.3 | text/javascript1.4 | text/javascript1.5 | text/jscript | text/x-javascript | text/x-ecmascript | text/vbscript) #REQUIRED
+          src CDATA #IMPLIED
+          defer (defer) #IMPLIED
+          async (async) #IMPLIED>
+<!ELEMENT select (option | optgroup)>
+<!ATTLIST select
+          autofocus (autofocus) #IMPLIED
+          disabled (autofocus) #IMPLIED
+          form CDATA #IMPLIED
+          multiple (multiple) #IMPLIED
+          name CDATA #IMPLIED
+          size CDATA #IMPLIED>
+<!ELEMENT optgroup (option)>
+<!ATTLIST optgroup
+          disabled (disabled) #IMPLIED
+          label CDATA #REQUIRED>
+<!ELEMENT small (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ELEMENT span (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ELEMENT strong (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ELEMENT sub (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ELEMENT sup (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ELEMENT svg EMPTY>
+<!ELEMENT textarea EMPTY>
+<!ATTLIST textarea
+          autofocus (autofocus) #IMPLIED
+          disabled (disabled) #IMPLIED
+          form CDATA #IMPLIED
+          maxlength CDATA #IMPLIED
+          name CDATA #IMPLIED
+          placeholder CDATA #IMPLIED
+          readonly (readonly) #IMPLIED
+          required (required) #IMPLIED
+          rows CDATA #REQUIRED
+          cols CDATA #REQUIRED
+          wrap (hard | soft) #IMPLIED>
+<!ELEMENT time (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ATTLIST time
+          datetime CDATA #IMPLIED>
+<!ELEMENT var (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ELEMENT video (#PCDATA | source)*>
+<!ATTLIST video
+          src CDATA #IMPLIED
+          autobuffer (autobuffer) #IMPLIED
+          autoplay (autoplay) #IMPLIED
+          loop (loop) #IMPLIED
+          controls (controls) #IMPLIED
+          width CDATA #IMPLIED
+          height CDATA #IMPLIED
+          poster CDATA #IMPLIED>
+<!ELEMENT rp (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ELEMENT fieldset (#PCDATA | legend | a | abbr | area | address | article | aside | audio | b | bdo | blockquote | bdo | br | button | canvas | cite | code | command | datalist | del | details | dfn | dialog | div | dl | em | embed | fieldset | figure | footer | form | h1 | h2 | h3 | h4 | h5 | h6 | header | hgroup | hr | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | menu | meta | meter | nav | noscript | ol | object | output | p | pre | progress | q | ruby | samp | script | section | select | small | span | strong | style | sub | sup | svg | table | textarea | time | ul | var | video)*>
+<!ATTLIST fieldset
+          disabled CDATA #IMPLIED
+          form CDATA #IMPLIED
+          name CDATA #IMPLIED>
+<!ELEMENT figure (#PCDATA | legend | a | abbr | area | address | article | aside | audio | b | bdo | blockquote | bdo | br | button | canvas | cite | code | command | datalist | del | details | dfn | dialog | div | dl | em | embed | fieldset | figure | footer | form | h1 | h2 | h3 | h4 | h5 | h6 | header | hgroup | hr | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | menu | meta | meter | nav | noscript | ol | object | output | p | pre | progress | q | ruby | samp | script | section | select | small | span | strong | style | sub | sup | svg | table | textarea | time | ul | var | video)*>
+<!ELEMENT footer (#PCDATA | a | abbr | area | address | article | aside | audio | b | bdo | blockquote | bdo | br | button | canvas | cite | code | command | datalist | del | details | dfn | dialog | div | dl | em | embed | fieldset | figure | footer | form | h1 | h2 | h3 | h4 | h5 | h6 | header | hgroup | hr | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | menu | meta | meter | nav | noscript | ol | object | output | p | pre | progress | q | ruby | samp | script | section | select | small | span | strong | style | sub | sup | svg | table | textarea | time | ul | var | video)*>
+<!ELEMENT form (#PCDATA | a | abbr | area | address | article | aside | audio | b | bdo | blockquote | bdo | br | button | canvas | cite | code | command | datalist | del | details | dfn | dialog | div | dl | em | embed | fieldset | figure | footer | form | h1 | h2 | h3 | h4 | h5 | h6 | header | hgroup | hr | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | menu | meta | meter | nav | noscript | ol | object | output | p | pre | progress | q | ruby | samp | script | section | select | small | span | strong | style | sub | sup | svg | table | textarea | time | ul | var | video)*>
+<!ATTLIST form
+          accept-charset CDATA #IMPLIED
+          action CDATA #REQUIRED
+          autocomplete (on | off) #IMPLIED
+          enctype (multipart/form-data | application/x-www-form-urlencoded | text/plain) #IMPLIED
+          method (get | post | put | delete) "get"
+          name CDATA #IMPLIED
+          novalidate (novalidate) #IMPLIED
+          target CDATA #IMPLIED>
+<!ELEMENT h1 (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ELEMENT h2 (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ELEMENT h3 (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ELEMENT h4 (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ELEMENT h5 (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ELEMENT h6 (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ELEMENT header (#PCDATA | a | abbr | area | address | article | aside | audio | b | bdo | blockquote | bdo | br | button | canvas | cite | code | command | datalist | del | details | dfn | dialog | div | dl | em | embed | fieldset | figure | footer | form | h1 | h2 | h3 | h4 | h5 | h6 | header | hgroup | hr | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | menu | meta | meter | nav | noscript | ol | object | output | p | pre | progress | q | ruby | samp | script | section | select | small | span | strong | style | sub | sup | svg | table | textarea | time | ul | var | video)*>
+<!ELEMENT hgroup (h1 | h2 | h3 | h4 | h5 | h6)>
+<!ELEMENT hr EMPTY>
+<!ELEMENT menu (li | (a, abbr, area, address, article, aside, audio, b, bdo, blockquote, bdo, br, button, canvas, cite, code, command, datalist, del, details, dfn, dialog, div, dl, em, embed, fieldset, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, i, iframe, img, input, ins, kbd, keygen, label, link, map, mark, math, menu, meta, meter, nav, noscript, ol, object, output, p, pre, progress, q, ruby, samp, script, section, select, small, span, strong, style, sub, sup, svg, table, textarea, time, ul, var, video))>
+<!ATTLIST menu
+          type (context | toolbar | list) #IMPLIED
+          label CDATA #IMPLIED>
+<!ELEMENT li (#PCDATA | a | abbr | area | address | article | aside | audio | b | bdo | blockquote | bdo | br | button | canvas | cite | code | command | datalist | del | details | dfn | dialog | div | dl | em | embed | fieldset | figure | footer | form | h1 | h2 | h3 | h4 | h5 | h6 | header | hgroup | hr | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | menu | meta | meter | nav | noscript | ol | object | output | p | pre | progress | q | ruby | samp | script | section | select | small | span | strong | style | sub | sup | svg | table | textarea | time | ul | var | video)*>
+<!ATTLIST li
+          value CDATA #IMPLIED>
+<!ELEMENT nav (#PCDATA | a | abbr | area | address | article | aside | audio | b | bdo | blockquote | bdo | br | button | canvas | cite | code | command | datalist | del | details | dfn | dialog | div | dl | em | embed | fieldset | figure | footer | form | h1 | h2 | h3 | h4 | h5 | h6 | header | hgroup | hr | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | menu | meta | meter | nav | noscript | ol | object | output | p | pre | progress | q | ruby | samp | script | section | select | small | span | strong | style | sub | sup | svg | table | textarea | time | ul | var | video)*>
+<!ELEMENT ol (li)>
+<!ATTLIST ol
+          start CDATA #IMPLIED
+          reversed (reversed) #IMPLIED>
+<!ELEMENT p (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ELEMENT pre (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ELEMENT section (#PCDATA | a | abbr | area | address | article | aside | audio | b | bdo | blockquote | bdo | br | button | canvas | cite | code | command | datalist | del | details | dfn | dialog | div | dl | em | embed | fieldset | figure | footer | form | h1 | h2 | h3 | h4 | h5 | h6 | header | hgroup | hr | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | menu | meta | meter | nav | noscript | ol | object | output | p | pre | progress | q | ruby | samp | script | section | select | small | span | strong | style | sub | sup | svg | table | textarea | time | ul | var | video)*>
+<!ELEMENT style EMPTY>
+<!ATTLIST style
+          type (text/css) #IMPLIED
+          media CDATA "screen"
+          scoped (scoped) #IMPLIED>
+<!ELEMENT table (caption? | colgroup | thead? | tfoot? | tbody | tr)>
+<!ATTLIST table
+          summary CDATA #IMPLIED>
+<!ELEMENT caption (#PCDATA | a | abbr | area | address | article | aside | audio | b | bdo | blockquote | bdo | br | button | canvas | cite | code | command | datalist | del | details | dfn | dialog | div | dl | em | embed | fieldset | figure | footer | form | h1 | h2 | h3 | h4 | h5 | h6 | header | hgroup | hr | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | menu | meta | meter | nav | noscript | ol | object | output | p | pre | progress | q | ruby | samp | script | section | select | small | span | strong | style | sub | sup | svg | table | textarea | time | ul | var | video)*>
+<!ELEMENT ul (li)>
+<!ELEMENT colgroup (col)>
+<!ATTLIST colgroup
+          span CDATA "1">
+<!ELEMENT col EMPTY>
+<!ATTLIST col
+          span CDATA "1">
+<!ELEMENT thead (tr)>
+<!ELEMENT tr (th | td)>
+<!ELEMENT th (#PCDATA | a | abbr | area | audio | b | bdo | br | button | canvas | cite | code | command | datalist | del | dfn | em | embed | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | meta | meter | noscript | object | output | progress | q | ruby | samp | script | select | small | span | strong | sub | sup | svg | textarea | time | var | video)*>
+<!ATTLIST th
+          headers CDATA #IMPLIED
+          rowspan CDATA "1"
+          colspan CDATA "1"
+          scope (col | colgroup | row | rowgroup) #IMPLIED>
+<!ELEMENT td (#PCDATA | a | abbr | area | address | article | aside | audio | b | bdo | blockquote | bdo | br | button | canvas | cite | code | command | datalist | del | details | dfn | dialog | div | dl | em | embed | fieldset | figure | footer | form | h1 | h2 | h3 | h4 | h5 | h6 | header | hgroup | hr | i | iframe | img | input | ins | kbd | keygen | label | link | map | mark | math | menu | meta | meter | nav | noscript | ol | object | output | p | pre | progress | q | ruby | samp | script | section | select | small | span | strong | style | sub | sup | svg | table | textarea | time | ul | var | video)*>
+<!ATTLIST td
+          headers CDATA #IMPLIED
+          rowspan CDATA "1"
+          colspan CDATA "1">
+<!ELEMENT tfoot (tr)>
+<!ELEMENT tbody (tr)>
+<!ELEMENT head ((base, command, link, meta, noscript, script, style, title))>
+<!ELEMENT base EMPTY>
+<!ATTLIST base
+          href CDATA #IMPLIED
+          target CDATA #IMPLIED>
+<!ELEMENT title EMPTY>
+<!ELEMENT mathml EMPTY>

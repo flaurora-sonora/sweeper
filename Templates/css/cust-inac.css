@@ -1,0 +1,1413 @@
+/* CLF 2.0 TEMPLATE VERSION 1.04 | VERSION 1.04 DU GABARIT NSI 2.0 */
+
+@import url("/Templates/css/frm.css");
+
+/* INAC - Custom CSS BEGINS | AINC - DEBUT DU CSS  */
+
+div#slideinterface {
+	padding: 0;
+	margin: 0;
+	/* padding-bottom: 4px; */
+	background: url(/Templates/images/sshw-mdiap/deco.gif) #f0eeee;
+}
+
+body {
+	background-color: #EDEEDE;
+}
+
+div.page {
+	/*width: 788px;*/
+	min-width: 12.00em;
+	background-color: #FFF;
+	margin-left: auto;
+	margin-right: auto;
+/*	background-image: url(/Templates/images/shad_bg.jpg);*/
+	background-repeat: repeat-y;
+}
+div.blueborder {
+	padding: 5px;
+	min-height: 158px;
+	min-width: 9.5em;
+}
+div.blueborder {
+	border: solid #96afc2 1px;
+}
+div.blueborder:after {
+	content: "";
+	display: block; 
+	height: 0; 
+	clear: left;
+	visibility: hidden;
+}
+
+.threeLndHdr {
+/*background-image:url(/Templates/images/hdrs/landbg_3col.jpg);
+background-color: #2D4F7C;
+background-repeat:no-repeat;
+height:100px;
+min-height:100px;*/
+max-width:390px;
+/*margin-bottom:15px;*/
+}
+
+div.blackborder div.threeLndHdr h1 {
+color:#2D4F7C;
+background-color: transparent;
+font-size:140%;
+/*margin-left: -15px;*/
+}
+
+/**:first-child+html div.fourLndHdr {
+margin-left:-15px;}*/
+
+.fourLndHdr {
+/*background-image:url(/Templates/images/hdrs/landAltbg_3col.gif);
+background-color: #2D4F7C;
+background-repeat:no-repeat;
+height:100px;
+min-height:100px;*/
+max-width:390px;
+}
+
+div.blackborder div.fourLndHdr h1 {
+color:#2D4F7C;
+background-color: transparent;
+font-size:140%;
+}
+
+.twoLndHdr {
+/*background-image:url(/Templates/images/hdrs/landbg_2col.jpg);
+background-image:url(/Templates/images/hdrs/landCntbg_2col.gif);
+background-color: #2D4F7C;
+background-repeat:no-repeat;
+height:100px;
+min-height:100px;*/
+max-width:590px;
+/*margin-bottom:15px;*/
+}
+
+div.twoLndHdr h1 {
+color:#2D4F7C;
+font-size:140%;
+}
+
+
+/* for background image pages*/
+
+.twoLndHdrImg {
+/*background-image:url(/Templates/images/hdrs/landbg_2col.jpg);*/
+background-image:url(/Templates/images/hdrs/landCntbg_2col.gif);
+background-color: #2D4F7C;
+background-repeat:no-repeat;
+height:100px;
+min-height:100px;
+max-width:590px;
+margin-bottom:15px;
+}
+
+div.twoLndHdrImg h1 {
+color:#FFFFFF;
+font-size:140%;}
+
+
+
+
+
+.contHdr {
+/*background-image:url(/Templates/images/hdrs/landCntbg_2col.gif);
+background-color: #2d5f86;
+background-repeat:no-repeat;
+height:100px;
+min-height:100px;*/
+max-width:590px;
+}
+
+div.contHdr h1 {
+color:#2D4F7C;
+font-size:140%;
+margin-left: -15px;}
+
+.LwrCntHdr {
+/*background-image:url(/Templates/images/hdrs/landbg_2colstr.gif);
+background-color: #2d5f86;
+background-repeat:no-repeat;*/
+height:50px;
+min-height:50px;
+width:590px;
+}
+
+div.LwrCntHdr h1 {
+color:#2D4F7C;
+font-size:135%;
+margin-left: -15px;}
+
+.oneCntHdr {
+/*background-image:url(/Templates/images/hdrs/landbg_1col.gif);
+background-color: #2d5f86;
+background-repeat:no-repeat;*/
+height:50px;
+min-height:50px;
+width:750px;
+}
+
+div.oneCntHdr h1 {
+color:#2D4F7C;
+font-size:135%;}
+
+
+.padding15 {padding: 5px 20px 5px 15px;}
+.padding15b {padding: 2px 20px 5px 15px;}
+
+div.blackborder h2.thrLnd, div.blackborder h2.fourLnd, div.blackborder h2.thrLnd, div.blackborder h2.fourLnd {
+color:#2D4F7C;
+background-color: transparent;
+font-size:125%;
+font-weight:bold;
+}
+
+div.blackborder h3.thrLnd, div.blackborder h3.fourLnd, div.blackborder h3.thrLnd, div.blackborder h3.fourLnd {
+color:#2D4F7C;
+background-color: transparent;
+font-size:118%;
+font-weight:bold;
+}
+
+div.center h2 {
+color:#2D4F7C;
+background-color: transparent;
+font-size:130%;
+font-weight:bold;
+}
+
+div.center h3 {
+color:#2D4F7C;
+background-color: transparent;
+font-size:118%;
+font-weight:bold;
+}
+
+div.center h4 {
+color:#2D4F7C;
+background-color: transparent;
+font-size:110%;
+font-weight:bold;
+}
+div.center h5 {
+color:#2D4F7C;
+background-color: transparent;
+font-size:105%;
+font-weight:bold;
+}
+div.center h6 {
+color:#2D4F7C;
+background-color: transparent;
+font-size:100%;
+font-weight:bold;
+}
+
+div.box-sm2 a:link:hover {
+	background-color: #E3E3E3;
+}
+
+div.left li.menucontent, div.left div.menucontent {
+		padding: 4px 3px 4px 12px;
+}
+.undrLneRed {border-bottom: 1px solid #990000;}
+
+
+
+div.left li.menucontent, div.left div.menucontent {
+	border-top: 2px solid #FFFFFF;
+	/*font-weight:Bold;*/
+}
+
+/* left subs */
+div.left ul.nav li.menucontent ul.navLeftSub {
+margin-left: -52px;
+margin-right: 0;
+
+list-style:none;}
+
+*:first-child+html div.left ul.nav li.menucontent ul.navLeftSub {
+margin-left: -11px;
+margin-right: 0;
+
+list-style:none;}
+
+div.left li.menucontentLsub, div.left div.menucontentLsub {
+	border-top: 1px solid #FFF;
+}
+
+div.left li.menucontentLsub, div.left div.menucontentLsub, div.left a.menulinkLsub {
+	color: #000;
+	background-color: #ecedea /*#dfe4d9*/;
+}
+
+li.menucontentLsub, li.menucontentLsub li, div.menucontentLsub, div.menucontentLsub li {
+	font-size: 10.0pt;
+	font-weight:normal;
+	vertical-align: middle;
+	margin: 0;
+}
+li.menucontentLsub, div.menucontentLsub {
+	padding: 2px 0 2px 12px;
+}
+a.menulinkLsub {
+	text-decoration: none;
+}
+a.menulinkLsub:hover {
+	text-decoration: underline;
+}
+
+div.left li.menucontent1, div.left div.menucontent1, div.left a.menulink1 {
+	color: #FFF;
+	background-color: #006599;
+}
+
+li.menucontent1, li.menucontent1 li, div.menucontent1, div.menucontent1 li {
+	font-size: 10.0pt;
+	vertical-align: middle;
+	margin: 0;
+}
+li.menucontent1, div.menucontent1 {
+	padding: 2px 3px 2px 12px;
+}
+a.menulink1 {
+	text-decoration: none;
+}
+a.menulink1:hover {
+	text-decoration: underline;
+}
+
+.left .nav li.last {
+	border-bottom: none;
+}
+
+div.last {
+	border-bottom: none;
+}
+/*.navSde {background-image:url(/Templates/images/sdehdr.jpg);
+background-repeat:no-repeat;
+padding-top:4px;
+}*/
+
+.rnavlistS
+{
+margin-left: 0;
+padding-left: 5px;
+list-style: none;
+background-color: #dfe4d9;
+}
+
+.rnavlistS li
+{
+padding-left: 10px;
+padding-bottom: 7px;
+padding-top: 5px;
+background-position: 0 .5em;
+line-height: 140%;
+
+}
+
+.rnavlist, .mainIndRlist
+{
+margin-left: 0;
+padding-left: 5px;
+list-style: none;
+background-color: #eeeedd;
+}
+
+.mainIndRlist li 
+{
+padding: 5px 0 3px 10px;
+
+font-size:89.5%;
+}
+
+.rnavlist li 
+{
+padding-left: 10px;
+padding-bottom: 3px;
+background-image: url(/Templates/images/arw-blt.gif);
+background-repeat: no-repeat;
+background-position: 0 .5em;
+line-height: 140%;
+font-size:89.5%;
+}
+
+.right .rnavlist li a.menulink, .right .mainIndRlist li a.menulink {
+background-color: #eeeedd;}
+
+.right .rnavlist li, .right .mainIndRlist li{
+	border-top: 1px solid #FFF;
+	margin-left: -4px;
+}
+
+.right .rnavlist li.last, .right .mainIndRlist li.last {
+	border-bottom: none;
+}
+
+
+.right .rnavlist li.alt, .right .mainIndRlist li.alt{
+	background-color:#f7f7ea;
+	border-top: 1px solid #FFF;
+}
+
+div.right a.menulinkAlt {
+	color: #000;
+	background-color: #f7f7ea;
+}
+
+a.menulinkAlt {
+	text-decoration: none;
+}
+a.menulinkAlt:hover {
+	text-decoration: underline;
+}
+
+.right .rnavlist li.altLast, .right .mainIndRlist li.altLast {
+	background-color:#f7f7ea;
+	border-bottom: none;
+}
+
+.right .rnavlist li.altLast a.menulinkAlt, .right .mainIndRlist li.altLast a.menulinkAlt {
+	background-color:#f7f7ea;
+	border-bottom: none;
+}
+
+.right .rnavlist li.RegLast {
+	background-color: #D8E1E8;
+	border-bottom: none;
+}
+.right .rnavlist a.menulinkReg {
+	color: #000;
+	background-color: #D8E1E8;
+	text-decoration:none;
+	font-weight:bold;
+	}
+
+
+.RmUndrlne {border-bottom:thin solid #003366;
+padding: 0 0 3px 0;
+}
+
+.rnavlist a.menulinkR {
+	text-decoration: none;
+	color:#000;
+	background-color: transparent;
+}
+a.menulinkR:hover {
+	text-decoration: underline;
+}
+
+.r2navlist a.menulinkR:visited {
+	color: #800000;
+	background-color:transparent;
+}
+
+.r2navlist li 
+{
+padding-left: 10px;
+padding-bottom: 3px;
+background-image: url(/Templates/images/arw-blt.gif);
+background-repeat: no-repeat;
+background-position: 0 .5em;
+line-height: 140%;
+
+}
+
+.right .r2navlist li{
+	border-top: 1px dotted #000;
+}
+
+.right .r2navlist li.last {
+	border-bottom: none;
+}
+
+.rhtTitle {
+background-color:#006599;
+color:#FFFFFF;
+/*font-size:small;*/
+padding:2px 0 2px 5px;
+	font-size: 10.0pt;
+	font-weight: 700;
+	line-height: 1.6em;
+	border: 0;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin: 0;}
+	
+
+/*slideshow list */
+.rnavlistSS
+{
+margin-left: 0;
+padding-left: 5px;
+list-style: none;
+background-color: #eeeedd;
+font-size: 0.85em;
+}
+
+.rnavlistSS li 
+{
+padding-left: 10px;
+padding-bottom: 3px;
+background-image: url(/Templates/images/arw-blt.gif);
+background-repeat: no-repeat;
+background-position: 0 .5em;
+line-height: 140%;
+}
+
+.rnavlistSS li.menucontent {
+background-color: #eeeedd;}
+
+.rnavlistSS a.menulinkSS {
+	text-decoration: none;
+	color:#000;
+	background-color: #eeeedd;
+}
+a.menulinkSS:hover {
+	text-decoration: underline;
+}
+
+.rnavlistSS a.menulinkSS:visited {
+	color: #800000;
+	background-color:#eeeedd;
+}
+
+h2.navR {
+	font-size: 10.0pt;
+	font-weight: 700;
+	line-height: 1.6em;
+	border: 0;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin: 0;
+}
+
+div.right h2.navR {
+	background-color: #898575;
+	color: #FFF;
+}
+
+.pointer
+{
+padding-left: 10px;
+padding-bottom: 3px;
+background-image: url(/Templates/images/arw-blt.gif);
+background-repeat: no-repeat;
+background-position: 0 .5em;
+}
+
+.undrLne {border-bottom: 1px solid #CCCCCC }
+
+.ctrTitle {
+background-color:#2C5D85;
+color:#FFFFFF;
+font-size:medium;
+padding:2px 0 2px 0;
+}
+
+/*.ctrTitle2 {
+background-image:url(../images/bludot.jpg);
+background-repeat:repeat;
+min-width: 390px;
+color: #FFFFFF;
+padding:2px 0 2px 0;
+}*/
+
+div.blackborder2 {
+	padding: 0 5px 0 5px;
+	min-width: 9.5em;
+}
+
+div.blackborder2 {
+	border: solid #000 1px;
+}
+div.blackborder2:after {
+	content: ""; 
+	display: block; 
+	height: 0; 
+	clear: left;
+	visibility: hidden;
+}
+
+.blackNewsborder {
+	padding:2px 5px 5px 5px;
+	border:solid #000 1px;
+	min-height:60px;
+	min-width:135px;
+}
+
+div.blackborder h1, div.blueborder h1{
+background-color:transparent /*#2C5D85*/;
+min-width: 390px;
+color: #FFFFFF;
+font-size:medium;
+padding:2px 0 2px 0;
+}
+
+div.blackborder h2, div.blueborder h2 {
+background-color: transparent /*#2C5D85*/;
+min-width: 390px;
+color: #2C5D85;
+font-size:125%;
+padding:2px 0 2px 0;
+}
+
+.clearBoth {
+clear: both;
+}
+
+.clearRight {
+clear: right;
+}
+
+.clearLeft {
+clear: left;
+}
+
+hr {text-align:center;}
+
+.image-middle {
+vertical-align:middle;
+}
+
+.center ul {
+list-style-type:disc;
+}
+
+.center ul.disc {
+list-style-type:disc;
+}
+
+.center ul.circle {
+list-style-type:circle;
+}
+
+.center ul ul.circle li {
+list-style-type:circle;
+}
+
+.center ul ul li {
+list-style-type:disc;
+}
+.center ul.noBullet {
+	list-style-type: none;
+}
+
+.center h2 {
+	margin-top: 2px;
+}
+
+.alignCenterFont85 {
+	text-align: center;
+	font-size: 8.5pt;
+}
+
+div.srvMsgCol div {
+	padding: 1.56em 20px 5px 0px;
+}
+
+.mrCap {text-align:center; font-size: 80%;}
+
+/*div.prodisA {
+	height: 0.375em;
+	min-height: 0.375em;
+	padding: 0;
+	margin: 0;
+}*/
+
+div.prodisA {
+	height: 5px;
+	min-height: 0.375em;
+	padding: 0;
+	margin: 0;
+}
+
+/*Simulating a single-column, multi-row table with  no background colour and a border*/
+.boxNoWidth{background-color: transparent; border: 1px solid #000000; padding:3px;}
+
+.box{background-color: transparent; width : 80%; border: 1px solid #000000; padding:3px;}
+
+.box90{background-color: transparent; width : 90%; border: 1px solid #000000; padding:3px;}
+
+.box98{background-color: transparent; width : 98%; padding:3px;}
+
+.brdr{background-color: transparent; width : 100%; border: 1px solid #000000; border-top:none;}
+
+.box-sm{background-color: transparent; width : 30%; border: 1px solid #990000; padding:3px; margin-right: 5px;}
+.box-sm2{background-color: transparent; width: 180px; border: 1px solid #990000; padding:3px; margin-right: 5px;}
+.box-sm3{background-color: transparent; width: 310px; border: 1px solid #990000; padding:5px 3px 3px 3px;}
+
+
+.mrpicRight{ float:right; text-align:center; background-color: transparent; width: 310px; border: 1px solid #990000; padding:5px 3px 3px 3px;}
+.mrpicLeft{ float:left; text-align:center; background-color: transparent; width: 310px; border: 1px solid #990000; padding:5px 3px 3px 3px;}
+
+.picBoxRight{ float:right; text-align:center; background-color: transparent; width: 210px; border: 1px solid #999999; padding:5px 3px 3px 3px;}
+.picBoxLeft{ float:left; text-align:center; background-color: transparent; width: 210px; border: 1px solid #999999; padding:5px 3px 3px 3px;}
+
+.picBoxCap {text-align:left; font-size:85%; background-color:transparent; color:#333333; padding-left:3px;}
+
+.picFloatRight{ float:right; text-align:center; background-color: transparent; padding:5px 5px 5px 5px;}
+.picFloatLeft{ float:left; text-align:center; background-color: transparent; padding:5px 5px 5px 5px;}
+
+.width275 {width:275px;}
+
+.frmBxGrn {
+border: 3px solid #009966;
+padding: 2px;
+width:450px;
+}
+.frmBxGrn2 {
+border:1px solid #009966;
+padding: 0 6px 0 6px;
+text-align:left;
+}
+
+
+
+
+/*Creating a box with no border and a background colour without using a table */
+.AccBox {background-color: #E7E7CF; width : 80%; border: none; padding:5px;}
+
+
+.fltrs{ margin:0 0 10px 10px; border:solid 2px #e2dba9; background-color:#f7f7ea; width:30%;  float:right;}
+
+div.fltrs h2 {
+margin:0;
+padding:2px 0 2px 0;
+text-align:center;
+background-color:#e2dba9;
+color:#294D7B;
+font-size:90%;
+}
+div.fltrs ul li {
+font-size:90%;
+}
+
+.boxLtGreyBG{background-color: #CFCFCF; width: 30%; padding:5px 5px 5px 10px; float:right;}
+
+
+/*Creating a box with a border and a background colour without using a table */
+.boxBlueBG{background-color: #DFEFFF; width : 80%; border: 1px solid #000000; padding:5px;}
+
+/*Simulating a single-column, multi-row table with a background colour and a border*/
+.boxRedBG{background-color: #CC0000; width : 80%; border: 1px solid #000000;}
+
+/* Simulating a two-column single row table */
+div.cols2 {float: left; width: 49%; margin: 0 3px 0 0; padding: 0;}
+div.cols2 div{padding: 5px;}
+
+div.cols2b {float: left; width: 49%; margin: 0 3px 0 0; padding: 0;}
+div.cols2b div{padding: 5px;}
+
+div.cols2c {float: left; width: 20%; margin: 0 3px 0 0; padding: 0;}
+div.cols2c div{padding: 5px;}
+
+div.cols2cSmall {float: left; width: 20%; margin: 0 3px 0 0; padding: 0; font-size:90%;}
+div.cols2cSmall div{padding: 5px; font-size:90%;}
+
+div.cols2d {float: left; width: 78%; margin: 0 3px 0 0; padding: 0;}
+div.cols2d div{padding: 5px;}
+
+
+/* Simulating a two-column 2-row table */
+div.row2 {margin: 0; padding: 0; width: 98.5%; overflow: hidden;}
+div.bx2{float: left; width: 45%; margin: 0 3px 0 0; padding: 0;}
+
+/* Simulating a three-column multi-row table */
+div.row {margin: 0; padding: 0; width: 98.5%; overflow: hidden;}
+div.bx{float: left; width: 32%; margin: 0 3px 0 0; padding: 0;}
+
+div.cols3 {float: left; width: 32%; margin: 0 3px 0 0; padding: 0;}
+div.cols3 div{padding: 5px;}
+
+
+/* these classes remove the horizontal border from table cells to give the appearance of a long column 
+see specialtablescells.htm in TBXinet/exa/  */
+
+
+.padding5 {
+	vertical-align:top;
+	padding:5px;
+}
+.paddedBottom10 {
+padding-bottom: 10px;
+}
+
+td.notop {
+	border-bottom: 0px solid #fff; /*height:100px;*/
+}
+
+td.padding5b {
+	vertical-align:bottom;
+	padding:5px;
+}
+
+td.nobottom {
+	border-top: 0px solid #fff; /*height:100px;*/
+}
+
+td.notoporbottom {
+	border-top: 0px solid #fff; border-bottom: 0px solid #fff; /*height:100px;*/
+}
+/* end of table border classes */
+
+
+.pdf
+{background:url(/images/comn/pdf.gif) no-repeat 100% ;
+padding: 0 25px 3px 0;
+}
+
+/* EXTERNAL LINK INDICATOR begins*/
+
+.external
+{background:url(/images/comn/www-link.jpg) no-repeat 100% ;
+padding: 0 22px 3px 0;
+}
+
+.goc {background:url(/images/comn/gc-lnk3.gif) no-repeat 100% ;
+padding: 0 15px 2px 0;
+}
+
+/* EXTERNAL LINK INDICATOR ends */
+
+
+
+/* GENERAL CSS BEGINS | CSS GENERALE COMMENCE */
+
+.vspac2 {padding-bottom:2px;
+padding-top:2px;}
+
+.vspac5 {padding-bottom:5px;
+padding-top:5px;}
+
+.vBspac5 {padding-bottom:5px;}
+
+.hspac2 {padding-left:2px;
+padding-right:2px;
+}
+
+.hspac5 {padding-left:5px;
+padding-right:5px;
+}
+
+.hspac10 {padding-left:10px;
+padding-right:10px;
+}
+
+.hRspac5 {padding-right:5px;}
+
+img {border:none;}
+
+/* Misc */
+
+.strike {
+text-decoration:line-through;
+}
+
+.width29 {width: 29%;}  
+
+/* for foot/endnotes where the surrounding text is bold, or is a table header, or otherwise large - makes the [Note \n] smaller and more readable */
+.normalnote {font-style:normal; font-weight:normal;
+}
+
+/* Colours and Backgrounds starts */
+
+.brdrRed {background-color: transparent; width : 100%; border: 1px solid #990000; border-top: none;}
+
+.hlghts {background-color: #FFFFCC; width: 60%; border: 1px solid #FFCC00; padding:8px;}
+
+.subhlghts {color: #FFFFFF; background-color: #6699CC;}
+
+
+
+.bgbge {background-color: #FFFFCC;}
+
+.bgLtBlue {background-color: #CFE7FF;}
+
+.bgDrkBlue {background-color:#006599;}
+
+.DrkBlue {color: #006599; background-color: transparent;}
+
+.DkBrown {color: #663333; background-color: transparent;}
+
+.dkred {color: #990000;}
+
+.dkredBG {background-color: #990000;}
+
+.bgPink {background-color:#FFCCCC;}
+
+.bgLtrGrey {background-color: #EFEFEF;}
+
+.bgLightGrey {background-color: #CCCCCC;}
+
+.bgPaleYellow {background-color: #FFFF99;}
+
+.brnFade {background-image: url(/Templates/images/brown-fade-bar.jpg);
+background-repeat:no-repeat;
+color:#FFFFFF;
+padding: 2px 0 4px 4px;
+}
+
+.bluFade {background-image: url(/Templates/images/blue-fade-bar.jpg);
+background-repeat:no-repeat;
+color:#FFFFFF;
+padding: 2px 0 4px 4px;
+}
+
+
+
+/* Colours and Backgrounds ends */
+
+.mthH2 {border-bottom:#999999 1px solid;
+margin: 25px 20px 0 0;
+padding:25px 0 0 0;
+}
+
+ dl.table-display
+{
+width: 100%;
+margin: 1em 0;
+padding: 0;
+font-size:95%;
+}
+
+.table-display dt
+{
+
+float: left;
+margin: 0 0 0 0;
+padding: .5em;
+border-top: 1px solid #FFF;
+border-right: 2px solid #FFF;
+font-weight: bold;
+background-color:#d8e1e7;
+height:2.5em;
+}
+
+.table-display dt.NwsAlt
+{
+
+float: left;
+margin: 0 0 0 0;
+padding: .5em;
+border-top: 1px solid #FFF;
+border-right: 2px solid #FFF;
+font-weight: bold;
+background-color:#f1f1f1;
+height:2.5em;
+}
+
+/* commented backslash hack for mac-ie5 \*/
+/*dt { clear: both; }*/
+/* end hack */
+
+.table-display dd
+{
+float: left;
+width: 90%;
+margin: 0 0 0 0;
+padding: .5em;
+border-top: 1px solid #FFF;
+background-color:#d8e1e7;
+height:2.5em;
+}
+
+.table-display dd.NwsAlt
+{
+float: left;
+width: 90%;
+margin: 0 0 0 0;
+padding: .5em;
+border-top: 1px solid #FFF;
+background-color:#f1f1f1;
+height:2.5em;
+}
+
+.Nws
+{
+background-color:#d8e1e7;
+color: #000
+}
+
+.NwsAlt
+{
+background-color:#f1f1f1;
+color: #000;
+}
+
+.srch1 {
+background-color:#2C5D85;
+color: #fff;
+padding: 0 2px 0 3px;
+}
+
+/* GENERAL CSS ENDS | CSS GENERALE TERMINE */
+
+/* used for RPP */
+table.rpp th, table.dpr th { background-color: #eee; }
+
+.borderLeftThin { border-left: solid 1px #000; }
+.borderRightThin { border-right: solid 1px #000; }
+
+.borderTopThin { border-top: solid 1px #000; }
+.borderTopThick { border-top: solid 2px #000; }
+.borderTopDouble { border-top: double 3px #000; }
+
+.borderBottomThin { border-Bottom: solid 1px #000; }
+.borderBottomThick { border-Bottom: solid 2px #000; }
+.borderBottomDouble { border-Bottom: double 3px #000; }
+
+.borderSimple { border: solid 1px #000; }
+
+.width33 { width: 33%; }
+.width34 { width: 34%; }
+
+.darkgreyBG { background-color: #666; color: #fff; } 
+
+/* end of RPP */
+
+/* Start of M & S classes */
+
+.rown {
+padding-bottom: 10px;
+clear: both;
+width: 575px;
+}
+
+.col1 {
+float: left;
+width: 250px;
+padding: 1px;
+margin: 25px 25px 5px 10px;
+border-top: 1px solid #000000;
+}
+
+.col2 {
+float: left;
+width: 116px;
+padding: 1px;
+margin: 25px 0px 5px 2px;
+border-top: 1px solid #000000;
+}
+
+.col3 {
+  float: left;
+  width: 350px;
+  padding: 1px 1px 8px 1px;
+  }
+ 
+.col4 {
+  float: left;
+  width: 200px;
+  padding: 1px 1px 8px 1px;
+  }
+
+.col1NoBorder {
+float: left;
+width: 250px;
+padding: 1px;
+margin: 25px 25px 5px 10px;
+}
+
+.col2NoBorder {
+float: left;
+width: 250px;
+padding: 1px;
+margin: 25px 0px 5px 2px;
+}
+
+.blackBox {
+
+border: 2px solid #000000;
+width: 570px;
+margin-left: 5px;
+padding-top: 0px;
+padding-right: 5px;
+padding-bottom: 0px;
+padding-left: 5px;
+display: block;
+}
+
+.underline {
+text-decoration: underline;
+
+}
+
+.col150 {
+float: left;
+width: 250px;
+padding: 1px;
+margin: 5px 25px 5px 10px;
+}
+
+.col250 {
+float: left;
+width: 250px;
+padding: 1px;
+margin: 5px 0px 5px 2px;
+}
+
+.col130 {
+float: left;
+width: 120px;
+padding: 1px;
+margin: 5px 25px 5px 10px;
+}
+
+.col230 {
+float: left;
+width: 160px;
+padding: 1px;
+margin: 5px 0px 5px 2px;
+}
+
+.col330 {
+float: left;
+width: 200px;
+padding: 1px;
+margin: 5px 0px 5px 2px;
+}
+
+.lowerlatin {
+list-style: lower-alpha;
+}
+
+th.un_normalize_header {
+text-align:left; 
+font-weight : normal; 
+}
+
+.smallfont {
+font-size: 12px;
+}
+
+.listnone {
+list-style: none;
+}
+
+.width200 {
+width: 200px;
+}
+
+.width300 {
+width: 300px;
+}
+
+.width100 {
+width: 100px;
+}
+
+.width400 {
+width: 400px;
+}
+/*
+.width50 {
+width: 50px;
+}*/
+
+.fontnormal {
+font-weight: normal;
+}
+
+.marginleft10px {
+display:block;
+margin-left: 10px;
+}
+
+.center ul.noBullet ul li {
+list-style-type: none;
+}
+
+.center ul.space li {
+margin-bottom: 10px;
+}
+ 
+div.footnote {
+font-size: 10px;
+}
+
+div.footnote a, div.footnote  a:visited {
+text-decoration: none;
+color: #000;
+}
+
+div.footnote a:hover {
+text-decoration: underline;
+color: #000;
+}
+
+.col1w {
+ float: left;
+}
+
+.col2w {
+ float: left;
+}
+
+.col3w {
+ float: left;
+}
+
+.col4w {
+ float: left;
+}
+
+.col5w {
+ float: left;
+}
+
+.col6w {
+ float: left;
+}
+
+.col7w {
+ float: left;
+}
+
+.col8w {
+ float: left;
+}
+
+.col9w {
+ float: left;
+}
+
+.colwidth10 {
+float: left;
+width: 50px;
+padding: 1px;
+margin: 5px 5px 5px 2px;
+}
+
+.colwidth20 {
+float: left;
+width: 100px;
+padding: 1px;
+margin: 5px 5px 5px 2px;
+}
+
+.colwidth30 {
+float: left;
+width: 150px;
+padding: 1px;
+margin: 5px 5px 5px 2px;
+}
+
+.colwidth40 {
+float: left;
+width: 200px;
+padding: 1px;
+margin: 5px 5px 5px 2px;
+}
+
+.colwidth50 {
+float: left;
+width: 250px;
+padding: 1px;
+margin: 5px 5px 5px 2px;
+}
+
+.colwidth60 {
+float: left;
+width: 300px;
+padding: 1px;
+margin: 5px 5px 5px 2px;
+}
+
+.colwidth70 {
+float: left;
+width: 350px;
+padding: 1px;
+margin: 5px 5px 5px 2px;
+}
+
+.colwidth80 {
+float: left;
+width: 400px;
+padding: 1px;
+margin: 5px 5px 5px 2px;
+}
+
+.colwidth90 {
+float: left;
+width: 450px;
+padding: 1px;
+margin: 5px 5px 5px 2px;
+}
+
+.colwidth100 {
+float: left;
+width: 500px;
+padding: 1px;
+margin: 5px 5px 5px 2px;
+}
+
+ul.noBullet li.op {
+
+	list-style-image: url("../images/whitebox.gif");
+
+}
+
+ul.noBullet li.op ul {
+ list-style-image: none;
+}
+
+ul.noBullet li.co {
+
+	list-style-image: url("../images/blackbox.gif");
+
+}
+
+ul.noBullet li.co ul {
+
+	list-style-image: none;
+
+}
+
+th.un_normalize_header {text-align : left; font-weight : normal; }
+
+.boxLtBlueBG {
+background-color: #99CCFF; 
+width: 40%; 
+padding:5px 5px 5px 10px; 
+float:right; 
+text-align:center;
+}
+
+.margintbottom0 {
+margin-bottom: 0px;
+}
+ 
+.margintbottom0 {
+margin-bottom: 0px;
+}
+ 
+.width67 {
+width: 67px;
+}
+.width91 {
+width: 91px;
+}
+/*
+.width70 {
+width: 70px;
+}*/
+.width77 {
+width: 77px;
+}
+ 
+.width113 {
+width: 113px;
+}
+.width145 {
+width: 45px;
+}
+ 
+.width239 {
+width: 239px;
+}
+ 
+.width243 {
+width: 243px;
+}
+ 
+.width324 {
+width: 324px;
+}
+.width81 {
+width: 81px;
+}
+.width37 {
+width: 37px;
+}
+.width36 {
+width: 36px;
+}
+.topcol {
+padding-left: 3px; 
+border-left: #000000 solid 1px;
+border-top: #000000 solid 1px;
+float: left;
+} 
+.borderright {
+border-right: #000000 solid 1px;
+}
+.borderbottom {
+border-bottom: #000000 solid 1px;
+}
+.borderleft { 
+padding-left: 3px; 
+border-left: #000000 solid 1px;
+}
+ 
+.margintop_10 {
+margin-top: -10px;
+}
+
+.bluestyle1 {
+color: #EBE9ED;
+}
+
+.col2WideCentered {
+float: left;
+width: 575px;
+text-align: center;
+padding: 1px;
+margin: 25px 25px 5px 10px;
+border-top: 1px solid #000000;
+}
+
+.boxLtGreyBG {
+background-color: #CCCCCC;
+width: 40%; 
+padding:5px 5px 5px 10px; 
+float:right; 
+}
+
+.boxLtGreyBG2 {
+background-color: #CCCCCC;
+width: 50%; 
+padding:5px 5px 5px 10px; 
+float:right; 
+}
+
+.greyBGWide {
+background-color: #CCCCCC;
+padding:5px 5px 5px 10px; 
+}
+
+.color696 {
+color: #696;
+}
+.fontwnormal {
+font-weight: normal; 
+color:#000;
+}
+ 
+.width150 {
+width: 150px;
+}
+.width350 {
+width: 350px;
+}
+.width260 {
+width: 260px;
+}
+.imgleftwidth175 {
+float:left; 
+width: 175
+}
+ 
+.marginright10 {
+margin-right: 10px;
+}
+
+ 
+
+
+
+/* **************************** */
+/* End of M & S classes */

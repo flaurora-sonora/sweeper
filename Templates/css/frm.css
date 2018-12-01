@@ -1,0 +1,134 @@
+/* CSS Document */
+
+.frm {margin:0; padding:0;}
+
+.frm form {  /* set width in form, not fieldset (still takes up more room w/ fieldset width */
+  font:100% verdana,arial,sans-serif;
+  margin: 0;
+  padding: 0;
+  /*min-width: 600px;
+  max-width: 600px;
+  width: 600px; */
+}
+
+.frm form fieldset {
+
+  padding:2%;        /* padding in fieldset support spotty in IE */
+ 
+  margin: 0 0 10px 0;
+  border:1px solid #006599;
+}
+
+.frm form fieldset legend {
+	font-size:100%; /* bump up legend font size, not too large or it'll overwrite border on left */
+					   /* be careful with padding, it'll shift the nice offset on top of border  */
+	color:#000;
+	margin:0;
+	padding:0 5px;
+	font-weight:bold;
+}
+
+.frm form label { 
+	display: block;  /* block float the labels to left column, set a width */
+	float: left; 
+	/*width: 594px; */
+	padding: 2px; 
+	margin: 5px 5px 0 0; /* set top margin same as form input - textarea etc. elements */
+	text-align:left; 
+	background:#DFEFFF;
+	border:1px solid #a4CaEF;	
+}
+
+.frm form input{
+	/* display: inline; inline display must not be set or will hide submit buttons in IE 5x mac */
+	/*width:250px;       set width of form elements to auto-size, otherwise watch for wrap on resize */
+	margin:5px 0 0 0; /* set margin on left of form elements rather than right of
+							  label aligns textarea better in IE */
+	font: 95% arial, Helvetica, sans-serif;
+}
+
+.frm form select{
+	/* display: inline; inline display must not be set or will hide submit buttons in IE 5x mac */
+	/*width:256px;       set width of form elements to auto-size, otherwise watch for wrap on resize */
+	margin:5px 0 0 0; /* set margin on left of form elements rather than right of
+							  label aligns textarea better in IE */
+	font: 95% arial, Helvetica, sans-serif;
+}
+
+.frm form textarea {
+	/* display: inline; inline display must not be set or will hide submit buttons in IE 5x mac */
+	/*width:140px;       set width of form elements to auto-size, otherwise watch for wrap on resize */
+	margin:5px 0 0 0; /* set margin on left of form elements rather than right of
+							  label aligns textarea better in IE */
+	padding:0;
+	font-size:95%;
+	height:100px;
+}
+
+.frm form input#reset {
+	margin-left:0px; /* set margin-left back to zero on reset button (set above) */
+}
+
+.frm form textarea { overflow: auto; }
+
+.frm form small {
+	display: block;
+	margin: 0 0 5px 160px; /* instructions/comments left margin set to align w/ right column inputs */
+	padding: 1px 3px;
+	font-size: 88%;
+}
+
+.frm form .required{font-weight:bold;} /* uses class instead of div, more efficient */
+
+.frm form br {
+	clear:left; /* setting clear on inputs didn't work consistently, so brs added for degrade */
+}
+
+.frm div.col_1
+{
+	float: left;
+	width: 48%;
+	display: inline;
+	margin:0 0 10px 0;
+	padding:0;
+}
+
+.frm .col_2
+{
+	float: left;
+	width: 49%;
+	margin:0 0 10px 1%;
+	padding:0;
+}
+
+.frm .errorMessage{
+	/*olor:#000;*/
+	font-style:italic;
+}
+
+.frm .errorItem{
+	background:#DFBaB5; 
+	border: 1px solid #993333;
+}
+
+.frm label.errorItem{
+	background:#DFBaB5; 
+	border: 1px solid #993333;
+	font-weight:bold;
+	font-size:90%;
+}
+
+.frm label.disabled{
+	background:#e5e5e5; 
+	border: 1px solid #CCCCCC;
+	color:#CCCCCC;
+}
+
+.frm form .button {
+	width:auto;
+	margin:0;
+	background:#006599;
+	border:1px solid #000;
+	color:#fff;
+	font: bold 90% arial, Helvetica, sans-serif;
+}

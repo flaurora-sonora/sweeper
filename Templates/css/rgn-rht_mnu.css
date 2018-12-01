@@ -1,0 +1,356 @@
+/* CLF 2.0 TEMPLaTE VERSION 1.04 | VERSION 1.04 DU GaBaRIT NSI 2.0 */
+
+/* GENERAL CSS BEGINS | DEBUT DU CSS GENERAL */
+
+/* Right menu */
+
+/* Level 1 */
+.rnavlist li.lvl1 
+{
+padding-left: 12px;
+padding-bottom: 3px;
+background-image: url(/Templates/images/arw-blt.gif);
+background-repeat: no-repeat;
+background-position: .15em .5em;
+line-height: 140%;
+}
+
+div.right .rnavlist li.lvl1, div.right .rnavlist li.lvl1c {
+	border-top: 1px solid #FFF;
+	margin-left: -4px;
+	background-color: #d8e1e7;
+}
+
+div.right .rnavlist li.lvl1 a.menulink, div.right .rnavlist li.lvl1c a.menulink {
+background-color: #d8e1e7;
+color:#000000;
+text-decoration:none;
+}
+
+div.right .rnavlist li.lvl1c
+{
+padding-left: 15px;
+padding-bottom: 3px;
+background-image: url(/Templates/images/dot-blt.gif);
+background-repeat: no-repeat;*/
+background-position: .15em .5em;
+line-height: 140%;
+}
+
+
+.rnavlist li.lvl1Actv
+{
+padding-left: 12px;
+padding-right: 2px;
+padding-bottom: 3px;
+background-image: url(/Templates/images/arw-blt2.gif);
+background-repeat: no-repeat;
+background-position: .25em .5em;
+line-height: 160%;
+}
+
+div.right .rnavlist li.lvl1Actv {
+	border-top: 1px solid #FFF;
+	margin-left: -4px;
+	background-color: #608bad;
+}
+
+div.right .rnavlist li.lvl1Actv a.menulink {
+background-color: #608bad;
+color:#FFFFFF;
+text-decoration:none;
+}
+
+/* Level 2 */
+
+* html div.right .rnavlist li ul.rnavlistLvl2 {
+margin-left: -8px;
+list-style-type:none;}
+
+div.right .rnavlist li ul.rnavlistLvl2 {
+margin-left: -48px;
+list-style-type:none;}
+
+
+div.right .rnavlist li ul.rnavlistLvl2 li 
+{
+padding-left: 15px;
+padding-bottom: 3px;
+line-height: 140%;
+font-size: 95%;
+}
+
+/* */
+*:first-child+html div.right .rnavlist li ul.rnavlistLvl2 li.lvl2 {
+	border-top: 1px solid #FFF;
+	margin-left: 36px;
+}
+
+div.right .rnavlist li ul.rnavlistLvl2 li.lvl2 {
+	border-top: 1px solid #FFF;
+	margin-left: -4px;
+	background-color: #a0bcd2;
+	background-image: url(/Templates/images/arw-blt3.gif);
+background-repeat: no-repeat;
+background-position: .2em .5em;
+}
+
+div.right .rnavlist li ul.rnavlistLvl2 li a.menulinkLvl2 {
+background-color: #a0bcd2;
+color:#000000;
+text-decoration:none;
+}
+
+*:first-child+html div.right .rnavlist li ul.rnavlistLvl2 li.lvl2c
+{margin-left:36px;}
+
+
+div.right .rnavlist li ul.rnavlistLvl2 li.lvl2c
+{
+padding-left: 15px;
+padding-bottom: 3px;
+background-color: #a0bcd2;
+background-image: url(/Templates/images/dot-blt.gif);
+background-repeat: no-repeat;*/
+background-position: .15em .5em;
+line-height: 140%;
+}
+
+
+*:first-child+html div.right .rnavlist li ul.rnavlistLvl2 li.lvl2Actv {
+	border-top: 1px solid #FFF;
+	margin-left: 36px;
+}
+
+div.right .rnavlist li ul.rnavlistLvl2 li.lvl2Actv {
+	border-top: 1px solid #FFF;
+	margin-left: -4px;
+	background-color: #608bad;
+	background-image: url(/Templates/images/arw-blt3b.gif);
+background-repeat: no-repeat;
+background-position: .2em .5em;
+}
+
+div.right .rnavlist li ul.rnavlistLvl2 li.lvl2Actv a.menulinkLvl2 {
+background-color: #608bad;
+color:#FFFFFF;
+text-decoration:none;
+}
+
+/* */
+
+*:first-child+html div.right .rnavlist li ul.rnavlistLvl2 li.lvl3 {
+	margin-left: 33px;
+}
+
+div.right .rnavlist li ul.rnavlistLvl2 li.lvl3 {
+	border-top: 1px solid #FFF;
+	margin-left: -7px;
+	background-color: #c4d9ea;
+	background-image: url(/Templates/images/arw-blt3.gif);
+background-repeat: no-repeat;
+background-position: .2em .5em;
+font-size: 105%;
+}
+
+
+div.right .rnavlist li ul.rnavlistLvl2 li a.menulinkLvl3 {
+background-color: #c4d9ea;
+color:#000000;
+text-decoration:none;
+}
+
+*:first-child+html div.right .rnavlist li ul.rnavlistLvl2 li.lvl3c {
+	margin-left: 33px;
+}
+
+div.right .rnavlist li ul.rnavlistLvl2 li.lvl3c {
+	border-top: 1px solid #FFF;
+	margin-left: -7px;
+	background-color: #c4d9ea;
+	background-image: url(/Templates/images/dot-blt.gif);
+background-repeat: no-repeat;
+background-position: .2em .5em;
+font-size: 105%;
+}
+
+*:first-child+html div.right .rnavlist li ul.rnavlistLvl2 li.lvl3Actv {
+	margin-left: 33px;
+
+}
+
+div.right .rnavlist li ul.rnavlistLvl2 li.lvl3Actv {
+	border-top: 1px solid #FFF;
+	margin-left: -7px;
+	background-color: #608bad;
+	background-image: url(/Templates/images/arw-blt3b.gif);
+background-repeat: no-repeat;
+background-position: .2em .5em;
+font-size: 105%;
+}
+
+div.right .rnavlist li ul.rnavlistLvl2 li.lvl3Actv a.menulinkLvl3 {
+background-color: #608bad;
+color:#FFFFFF;
+text-decoration:none;
+}
+
+/* */
+
+*:first-child+html div.right .rnavlist li ul.rnavlistLvl2 li.lvl4 {
+	margin-left: 33px;
+}
+
+div.right .rnavlist li ul.rnavlistLvl2 li.lvl4 {
+	border-top: 1px solid #FFF;
+	margin-left: -8px;
+	background-color: #dbeefc;
+	background-image: url(/Templates/images/arw-blt3.gif);
+background-repeat: no-repeat;
+background-position: .2em .5em;
+}
+
+
+div.right .rnavlist li ul.rnavlistLvl2 li a.menulinkLvl4 {
+background-color: #dbeefc;
+color:#000000;
+text-decoration:none;
+}
+
+*:first-child+html div.right .rnavlist li ul.rnavlistLvl2 li.lvl4Actv {
+	margin-left: 33px;
+}
+
+div.right .rnavlist li ul.rnavlistLvl2 li.lvl4Actv {
+	border-top: 1px solid #FFF;
+	margin-left: -7px;
+	background-color: #608bad;
+	background-image: url(/Templates/images/arw-blt3b.gif);
+background-repeat: no-repeat;
+background-position: .2em .5em;
+
+}
+div.right .rnavlist li ul.rnavlistLvl2 li.lvl4Actv a.menulinkLvl4 {
+background-color: #608bad;
+color:#FFFFFF;
+text-decoration:none;
+}
+
+*:first-child+html div.right .rnavlist li ul.rnavlistLvl2 li.lvl4c {
+	margin-left: 33px;
+}
+div.right .rnavlist li ul.rnavlistLvl2 li.lvl4c {
+	border-top: 1px solid #FFF;
+	margin-left: -7px;
+	background-color: #dbeefc;
+	background-image: url(/Templates/images/dot-blt.gif);
+background-repeat: no-repeat;
+background-position: .2em .5em;
+}
+
+
+
+/* */
+
+*:first-child+html div.right .rnavlist li ul.rnavlistLvl2 li.lvl5 {
+	margin-left: 33px;
+}
+
+div.right .rnavlist li ul.rnavlistLvl2 li.lvl5 {
+	border-top: 1px solid #FFF;
+	margin-left: -7px;
+	background-color: #e7e6ca;
+	background-image: url(/Templates/images/arw-blt3.gif);
+background-repeat: no-repeat;
+background-position: .2em .5em;
+font-size: 105%;
+}
+
+div.right .rnavlist li ul.rnavlistLvl2 li a.menulinkLvl5 {
+background-color: #e7e6ca;
+color:#000000;
+text-decoration:none;
+}
+
+*:first-child+html div.right .rnavlist li ul.rnavlistLvl2 li.lvl5c {
+	margin-left: 33px;
+}
+
+div.right .rnavlist li ul.rnavlistLvl2 li.lvl5c {
+	border-top: 1px solid #FFF;
+	margin-left: -7px;
+	background-color: #e7e6ca;
+	background-image: url(/Templates/images/dot-blt.gif);
+background-repeat: no-repeat;
+background-position: .2em .5em;
+font-size: 105%;
+}
+
+*:first-child+html div.right .rnavlist li ul.rnavlistLvl2 li.lvl5Actv {
+	margin-left: 33px;
+}
+
+div.right .rnavlist li ul.rnavlistLvl2 li.lvl5Actv {
+	border-top: 1px solid #FFF;
+	margin-left: -7px;
+	background-color: #608bad;
+	background-image: url(/Templates/images/arw-blt3b.gif);
+background-repeat: no-repeat;
+background-position: .2em .5em;
+font-size: 105%;
+}
+
+div.right .rnavlist li ul.rnavlistLvl2 li.lvl5Actv a.menulinkLvl5 {
+background-color: #608bad;
+color:#FFFFFF;
+text-decoration:none;
+}
+
+/* Below level 6 */
+
+
+div.right .rnavlist li ul.rnavlistLvl2 li a.menulinkLvl6 {
+background-color: #eeeedd;
+color:#000000;
+text-decoration:none;
+}
+
+*:first-child+html div.right .rnavlist li ul.rnavlistLvl2 li.lvl6 {
+	margin-left: 33px;
+}
+
+div.right .rnavlist li ul.rnavlistLvl2 li.lvl6 {
+	border-top: 1px solid #FFF;
+	margin-left: -8px;
+	background-color: #eeeedd;
+	background-image: url(/Templates/images/dot-blt.gif);
+background-repeat: no-repeat;
+background-position: .2em .5em;
+}
+/*
+*:first-child+html div.right .rnavlist li ul.rnavlistLvl2 li.lvl6Actv {
+	margin-left: 33px;
+}
+
+div.right .rnavlist li ul.rnavlistLvl2 li.lvl6Actv {
+	border-top: 1px solid #FFF;
+	margin-left: -8px;
+	background-color: #608bad;
+	background-image: url(/Templates/images/arw-blt3b.gif);
+background-repeat: no-repeat;
+background-position: .2em .5em;
+font-size: 105%;
+}
+
+div.right .rnavlist li ul.rnavlistLvl2 li.lvl6Actv a.menulinkLvl6 {
+background-color: #608bad;
+color:#FFFFFF;
+text-decoration:none;
+}
+*/
+
+
+/* End of Right menu */
+
+
+/* GENERAL CSS ENDS | FIN DU CSS GENERAL */

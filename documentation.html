@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>HTML Sweeper</title>
+<meta name="description" content="Sweeper is a PHP program that cleans and makes accessible some HTML code." />
+<meta name="keywords" content="HTML, Sweeper, accessibility, PHP, regular expressions, DOM, XPath, CSS" />
+<style type="text/css" xml:space="preserve">
+/*<![CDATA[*/
+del { color: red; }
+ins { color: teal; }
+pre { background: #cccccc; padding: 4px; }
+h2 { margin-top: 2em; }
+abbr, acronym { cursor: help; }
+.old_releases { font-size: 60%; }
+q { /*quotes: 'â' 'â' 'â' 'â';*/ quotes: '' '' '' ''; }
+/*]]>*/
+</style>
+</head>
+<body>
+<h1>Sweeper</h1>
+<div><a href="#About">About</a> | <a href="#Download">Download</a> | <a href="#Usage">Usage</a> | <a href="#Profiles">Profiles</a></div>
+<h2 id="About">About</h2>
+<p>Sweeper is an <acronym title="HyperText Markup Language">HTML</acronym> code cleaner based on <a href="http://www.robodesign.ro/mihai/my-projects/retidy">Mihai &#350;ucan's ReTidy</a>. It is written in <acronym title="PHP: Hypertext Preprocessor">PHP</acronym> and mostly uses regular expressions, <acronym title="Document Object Model">DOM</acronym> and <abbr title="XML Path Language">XPath</abbr>.</p>
+<h2 id="Download">Download</h2>
+<p>You already did ;p</p>
+<h2 id="Usage">Usage</h2>
+<p>Use run_sweeper.php to select the profile and other options for sweeper to use. Options:</p>
+<ul>
+<li><strong>Profile:</strong> controls what sweeper will do.</li>
+<li><strong>Government department:</strong> this is used for detection of the abbreviations files and, if a template is needed but not specified, the template.</li>
+<li><strong>Path:</strong> use this for abbreviations other than government clients.</li>
+<li><strong>English template:</strong> this specifies the english template that sweeper will use (if required by the profile).</li>
+<li><strong>French template:</strong> this specifies the french template that sweeper will use (if required by the profile).</li>
+<li><strong>Source:</strong> is the path to the files to be swept.</li>
+<li><strong>Target:</strong> is the path the swept files will be saved to.</li>
+</ul>
+<p>You must have <acronym title="PHP: Hypertext Preprocessor">PHP</acronym> installed. For windows try <a href="http://www.wampserver.com/">WampServer</a>. Under linux, <acronym title="PHP: Hypertext Preprocessor">PHP</acronym> is probably already installed.</p>
+<h3><acronym title="PHP: Hypertext Preprocessor">PHP</acronym> configuration (in php.ini)</h3>
+<p>Sweeper has been tested with WampServer 2.1d (december 27 2010) (which uses <acronym title="PHP: Hypertext Preprocessor">PHP</acronym> 5.3.4). The php.ini is in wamp\bin\apache\Apache2.2.17\bin for WampServer 2.1d and the following instructions apply to this version of <acronym title="PHP: Hypertext Preprocessor">PHP</acronym>; other versions may differ. Notice that there is also a php.ini file in wamp\bin\php\php5.3.4 but that it does not need to be changed.</p>
+<p>For output of messages as sweeper is running:</p>
+<pre xml:space="preserve">
+...
+; Default Value: Off
+; Development Value: 4096
+; Production Value: 4096
+; http://php.net/output-buffering
+output_buffering = <del>On</del><ins>0</ins>
+...
+</pre>
+<p>Sweeper can sometimes take a long time to run, especially when sweeping many or long files or using the clean_word profile.</p>
+<pre xml:space="preserve">
+...
+; Maximum execution time of each script, in seconds
+; http://php.net/max-execution-time
+; Note: This directive is hardcoded to 0 for the CLI SAPI
+max_execution_time = <del>30</del><ins>3600</ins>     
+
+; Maximum amount of time each script may spend parsing request data. It's a good
+; idea to limit this time on productions servers in order to eliminate unexpectedly
+; long running scripts. 
+; Note: This directive is hardcoded to -1 for the CLI SAPI
+; Default Value: -1 (Unlimited)
+; Development Value: 60 (60 seconds)
+; Production Value: 60 (60 seconds)
+; http://php.net/max-input-time
+max_input_time = <del>60</del><ins>3600</ins>
+
+; Maximum input variable nesting level
+; http://php.net/max-input-nesting-level
+;max_input_nesting_level = 64
+
+; Maximum amount of memory a script may consume (128MB)
+; http://php.net/memory-limit
+memory_limit = <del>128M</del><ins>1024M</ins>
+...
+</pre>
+<p>To suppress notices about coding quality (that were suppressed when writing sweeper).</p>
+<pre xml:space="preserve">
+...
+; Default Value: E_ALL & ~E_NOTICE
+; Development Value: E_ALL | E_STRICT
+; Production Value: E_ALL & ~E_DEPRECATED
+; http://php.net/error-reporting
+error_reporting = E_ALL<ins> & ~E_NOTICE & ~E_STRICT</ins>
+...
+</pre>
+<!--p>The tidy library must be enabled:</p>
+<pre xml:space="preserve">
+...
+;extension=php_sybase_ct.dll
+<del>;</del>extension=php_tidy.dll
+;extension=php_xmlrpc.dll
+...
+</pre-->
+<p>The correct timezone must be chosen so that the versioning of abbreviations files will work properly (see <a href="http://php.net/manual/en/timezones.php">http://php.net/manual/en/timezones.php</a> for a list of acceptable values):</p>
+<pre xml:space="preserve">
+...
+[Date]
+; Defines the default timezone used by the date functions
+; http://php.net/date.timezone
+date.timezone = <del>UTC</del><ins>(your value here)</ins>
+...
+</pre>
+<h2 id="Profiles">Profiles</h2>
+<p>Profiles configure what sweeper does. They specify what functions run and how to run them.</p>
+<h3 id="abbr">abbr</h3>
+<p>Applies abbreviations for the specified government department or by using the path to the abbreviations file. Use after the <a href="#find_abbr">find_abbr</a> profile.</p>
+<p>A user script that is sometimes useful (sometimes refreshing the page is required for it to work) when dealing with acronyms and abbreviations, either when reading a page with them or for checking that their definitions are correct, is <a href="http://userscripts.org/scripts/show/51523">Flip ABBRs and ACRONYMs</a>.</p>
+<h3 id="add_BOM">add_BOM</h3>
+<p>Adds a Byte Order Mark to files; make sure your files are <acronym title="Universal Character Set Transformation Format &mdash; 8-bit">UTF-8</acronym>.</p>
+<h3 id="arbitrary_sweep">arbitrary_sweep</h3>
+<p>This profile facilitates processing of arbitrary code that is located in the arbitrary_sweep() function.</p>
+<h3 id="basic">basic</h3>
+<p>Does some basic cleaning that should be safe for most files.</p>
+<h3 id="classes_to_styles">classes_to_styles</h3>
+<p>Converts <acronym title="Cascading Style Sheets">CSS</acronym> classes to inline styles by finding the style information for a given class in the stylesheets.</p>
+<h3 id="clean_CSS">clean_CSS</h3>
+<p>Mostly syntax formatting of <acronym title="Cascading Style Sheets">CSS</acronym> code.</p>
+<h3 id="clean_excel">clean_excel</h3>
+<p>This profile is intended to be used on <acronym title="Extensible Markup Language">XML</acronym> generated from microsoft excel's &ldquo;<q>Save As... XML Spreadsheet 2003 (*.xml)</q>&rdquo; option. You'll probably want to run <a href="#clean_word">clean_word</a> afterwards since this profile brings the code into a format that is similar to what that profile would run on.</p>
+<h3 id="clean_feeds">clean_feeds</h3>
+<p>Does a couple simple things to clean web feed files, such as generating an <abbr title="identifier">ID</abbr> for an entry.</p>
+<h3 id="clean_indesign">clean_indesign</h3>
+<p>Convert common indesign generated class names to <acronym title="HyperText Markup Language">HTML</acronym> code.</p>
+<h3 id="clean_openoffice">clean_openoffice</h3>
+<p>This profile is part of a process intended to enable persons without <acronym title="HyperText Markup Language">HTML</acronym> editing skills to edit a webpage in a word processor instead. The process is as follows:</p>
+<ol id="clean_openoffice_process">
+<li>sweep using <a href="#html_to_word">html_to_word</a> profile which creates the abbr files and metadata files</li>
+<li>copy <acronym title="HyperText Markup Language">HTML</acronym> into OpenOffice from a browser, excluding the template, and save as .odt</li>
+<li>make any desired edits in OpenOffice or Microsoft Word</li>
+<li>save as <acronym title="HyperText Markup Language">HTML</acronym> in OpenOffice</li>
+<li>place abbr files and metadata files and <acronym title="HyperText Markup Language">HTML</acronym> saved from OpenOffice into not-swept folder and use the <a href="#clean_openoffice">clean_openoffice</a> profile</li>
+<li>run other profiles as normal, if needed (for example <a href="#dom_table_accessibility">dom_table_accessibility</a> or <a href="#basic">basic</a>)</li>
+</ol>
+<h3 id="clean_PDF">clean_PDF</h3>
+<p>This profile is intended to be used on <acronym title="HyperText Markup Language">HTML</acronym> generated from adobe acrobat's &ldquo;<q>Save As... HTML (*.html, *.htm)</q>&rdquo; option.</p>
+<h3 id="clean_word">clean_word</h3>
+<p>This profile is intended to be used on <acronym title="HyperText Markup Language">HTML</acronym> generated from microsoft word's &ldquo;<q>Save As... Web Page, Filtered (*.htm; *.html)</q>&rdquo; option. This profile can take a long time to run. This is because it is cleaning word of many unnecessary wrappers. Ensuring that the document is semantically the same while using cleaner code (less tags) can require a long time. A significant contribution to the required time is:</p>
+<ul>
+<li>Sections that become one block with much styling; example: a table of contents that becomes a long paragraph with links formatted by line breaks.</li>
+</ul>
+<h3 id="convert_to_iso_8859_1">convert_to_iso_8859_1</h3>
+<p>Converts the character set of files to iso-8859-1.</p>
+<h3 id="convert_to_utf8">convert_to_utf8</h3>
+<p>Converts the character set of files to <acronym title="Universal Character Set Transformation Format &mdash; 8-bit">UTF-8</acronym>.</p>
+<h3 id="decode_character_entities">decode_character_entities</h3>
+<p>Transforms character entities to their raw character equivalents.</p>
+<h3 id="dekern">dekern</h3>
+<p>Undoes <a href="http://en.wikipedia.org/wiki/Kerning">kerning</a> that makes it so that a character entity appears in the place of two or more letters because simple letters are more supported across computer programs than the <acronym title="HyperText Markup Language">HTML</acronym> character entities of their ligatures.</p>
+<h3 id="dom_table_accessibility">dom_table_accessibility</h3>
+<p>Make tables accessible. What this amounts to is making explicit the data relations so that user agents other than a browser on a typically-sized monitor of a <acronym title="Personal Computer">PC</acronym> can also be sure they know how to represent the data. Specific actions this profile takes:</p>
+<ul>
+<li>Apply scope or ids and headers (works best when provided with &lt;th&gt;s)</li>
+<li>Generate other table structure (&lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;)</li>
+</ul>
+<h3 id="encode_character_entities">encode_character_entities</h3>
+<p>Transforms character entities and raw characters to their named character entity equivalents.</p>
+<h3 id="find_abbr">find_abbr</h3>
+<p>Looks in the code for potential abbreviations and writes them to a file. A human then looks at the potentially new abbreviations then adds the ones they want to the abbreviations file.</p>
+<h3 id="flip_lists">flip_lists</h3>
+<p>Any lists marked with a fliplist class will be flipped.</p>
+<h3 id="flip_tables">flip_tables</h3>
+<p>Attempts to transform a table so that its x and y axes are reversed.</p>
+<h3 id="html_to_word">html_to_word</h3>
+<p>Saves files for metadata from <acronym title="HyperText Markup Language">HTML</acronym> that is incompatible with word processors so that they can be reintegrated into the <acronym title="HyperText Markup Language">HTML</acronym> according to the <a href="#clean_openoffice_process">process</a> using the <a href="#clean_openoffice">clean_openoffice</a> profile.</p>
+<h3 id="link_titles">link_titles</h3>
+<p>Link title attributes that contain the same text as the link text are removed.</p>
+<h3 id="ol_start">ol_start</h3>
+<p>Since the start attribute is invalid on &lt;ol&gt; in <acronym title="Extensible HyperText Markup Language">XHTML</acronym>, this profile adds some javascript that adds the start attribute so that the page validates with <a href="http://validator.w3.org/">W3C validator</a> because this validator does not validate javascript.</p>
+<h3 id="quotation">quotation</h3>
+<p>Adds &lt;q&gt; tags and normalizes quote characters to be the appropriate oriented quote character for the language. Notice that there is no way to guarantee which orientation a non-oriented quote character should be transformed into, such as when quote characters are improperly used, so that additional work may be necessary.</p>
+<h3 id="remove_embedded_stylesheets">remove_embedded_stylesheets</h3>
+<p>Turns embedded stylesheets into inline styles.</p>
+<h3 id="shiftFootnotesDown">shiftFootnotesDown</h3>
+<p>Shifts footnotes down by one.</p>
+<h3 id="shiftFootnotesUp">shiftFootnotesUp</h3>
+<p>Shifts footnotes up by one.</p>
+<h3 id="shiftHeadingsDown">shiftHeadingsDown</h3>
+<p>Shifts headings down by one.</p>
+<h3 id="shiftHeadingsUp">shiftHeadingsUp</h3>
+<p>Shifts headings up by one.</p>
+<h3 id="structure">structure</h3>
+<p>Applies structure (matching tables of contents and headings) to documents.</p>
+<h3 id="styles_to_classes_full">styles_to_classes_full</h3>
+<p>Turns inline styles into classes by looking at the stylesheets and matching inline style information to stylesheet style information.</p>
+<h3 id="templateCode">templateCode</h3>
+<p>Templates the code according to what templates have been specified.</p>
+<h3 id="tidy">tidy</h3>
+<p>Cleans the syntax of code.</p>
+</body>
+</html>

@@ -1,0 +1,87 @@
+/* For documents done for NWT INAC */
+.inac-heading-colour { color:#2D4F7C; }
+.padding-4px { padding: 4px; }
+.padding-10px { padding: 10px; }
+.padding-0 { padding:0; }
+.padding-top-0 { padding-top:0; }
+.padding-right-0 { padding-right:0; }
+.padding-bottom-0 { padding-bottom:0; }
+.padding-left-0 { padding-left:0; }
+.padding-top-1em { padding-top:1em; }
+.margin-0 { margin:0; }
+.margin-top-0 { margin-top:0; }
+.margin-right-0 { margin-right:0; }
+.margin-bottom-0 { margin-bottom:0; }
+.margin-left-0 { margin-left:0; }
+.margin-1em { margin:1em; }
+.margin-top-1em { margin-top:1em; }
+.margin-right-1em { margin-right:1em; }
+.margin-bottom-1em { margin-bottom:1em; }
+.margin-left-1em { margin-left:1em; }
+.margin-2em { margin:2em; }
+.margin-top-2em { margin-top:2em; }
+.margin-right-2em { margin-right:2em; }
+.margin-bottom-2em { margin-bottom:2em; }
+.margin-left-2em { margin-left:2em; }
+.margin-10px { margin:10px; }
+.margin-top-10px { margin-top:10px; }
+.margin-right-10px { margin-right:10px; }
+.margin-bottom-10px { margin-bottom:10px; }
+.margin-left-10px { margin-left:10px; }
+.margin-left-15percent{ margin-left:15%; }
+.black-border { border: 1px solid black; }
+.black-border-top { border-top: 1px solid black; }
+.black-border-right { border-right: 1px solid black; }
+.black-border-bottom { border-bottom: 1px solid black; }
+.black-border-left { border-left: 1px solid black; }
+.border-0 { border: 0; }
+.border-top-0 { border-top: 0; }
+.border-right-0 { border-right: 0; }
+.border-bottom-0 { border-bottom: 0; }
+.border-left-0 { border-left: 0; }
+.image-left-with-margin { float:left; margin-right: 10px; margin-bottom: 10px; }
+.image-right-with-margin { float:right; margin-left: 10px; margin-bottom: 10px; }
+.image-left-with-margin2 { float:left; margin-right: 30px; margin-bottom: 10px; }
+.image-right-with-margin2 { float:right; margin-left: 30px; margin-bottom: 10px; }
+.width-235px { width: 235px; }
+.width-314px { width: 314px; }
+.width-590px { width: 590px; }
+/* In internet explorer 6, the indentation of main sections with 590-pixel-wide images in them
+can cause the "floating ie problem". Assuming that we had the previous class on all 590 pixel-wide images, 
+then we could style them to counter the indentation of the sections so that their edge is not 
+"partly off the page". Instead, 590-pixel-wide images have had their width attribute reduced
+to 570 pixels to ensure that they do not break the page in internet explorer 6 with the section
+indentation. */
+.height-0 { height: 0; }
+.height-2em { height: 2em; }
+.height-4em { height: 4em; }
+.height-6em { height: 6em; }
+.height-8em { height: 8em; }
+.height-12em { height: 12em; }
+.height-16em { height: 16em; }
+.height-32em { height: 32em; }
+/* make these classes work with the new INAC headings */
+.h1Size { font-size: 130%; }
+.h2Size { font-size: 125%; }
+.h3Size { font-size: 115%; }
+.h4Size { font-size: 105%; }
+
+/* The next four classes are not generally useful and maybe should not be included in the 
+institutional stylesheet. */
+.IISActivityReportYellow { background-color:#887700; }
+/*.IISActivityReportYellow2 { background-color:#FFEEBB; }*/
+.IISActivityReportPurple { background-color:#223355 }
+/*.IISActivityReportPurple2 { background-color:#AAAABB }*/
+.IISActivityReportOrange { background-color:#996600; }
+/*.IISActivityReportOrange2 { background-color:#FFDDBB; }*/
+.IISActivityReportGreen { background-color:#447722 }
+/*.IISActivityReportGreen2 { background-color:#BBCCAA }*/
+/**/
+
+.dogrib-text { font-family: WinMac SILSophia Dene; }
+.dogrib-text body, .dogrib-text p,.dogrib-text h1,.dogrib-text h2,.dogrib-text h3,.dogrib-text h4,.dogrib-text h5,.dogrib-text h6, .dogrib-text blockquote, .dogrib-text table, .dogrib-text td, .dogrib-text th, .dogrib-text li, .dogrib-text a, .dogrib-text ul, .dogrib-text ol, .dogrib-text dd, .dogrib-text dl, .dogrib-text dt,
+.dogrib-text form, .dogrib-text button, .dogrib-text fieldset, .dogrib-text label, .dogrib-text select, .dogrib-text option, .dogrib-text input, .dogrib-text textarea {
+	font-family: WinMac SILSophia Dene;
+	font-size: 12.0pt;
+}
+
